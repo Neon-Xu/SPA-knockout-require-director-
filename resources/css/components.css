@@ -1,0 +1,255 @@
+
+/*
+Reset
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+    display: block;
+}
+body {
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+a:hover, a:active {
+    outline: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*==Components Checkbox==*/
+
+.cmp-checkbox {
+	float: left;
+	font-size: 14px;
+	text-decoration: none;
+	margin-right: 30px;
+}
+
+.cmp-icon-checkbox {
+	margin-top: 5px;
+	float: left;
+	width: 14px;
+	height: 14px;
+	background: url(../img/components/icon-checkbox.png) no-repeat 0 0;
+	margin-right: 5px;
+	transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+}
+
+.selected .cmp-icon-checkbox {
+	background: url(../img/components/icon-checkbox.png) no-repeat 0 -46px;
+}
+
+.cmp-checkbox-text {
+	color: #666666;
+}
+
+.selected .cmp-checkbox-text {
+	color: #333333;
+}
+
+
+/*==Components Radio==*/
+
+.cmp-radio {
+	float: left;
+	font-size: 14px;
+	height: 20px;
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+.cmp-icon-radio {
+	margin-top: 5px;
+	float: left;
+	width: 14px;
+	height: 14px;
+	background: url(../img/components/icon-radio.png) no-repeat 0 0;
+	margin-right: 5px;
+	transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+}
+
+.selected .cmp-icon-radio {
+	background: url(../img/components/icon-radio.png) no-repeat 0 -46px;
+}
+
+.cmp-radio-text {
+	color: #666666;
+}
+
+.selected .cmp-radio-text {
+	color: #333333;
+}
+
+
+
+/*==Components combobox==*/
+
+.cmp-combobox {
+    min-width: 100px;
+	line-height: 1;
+}
+.cmp-combobox, .cmp-combobox-inner {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.cmp-combobox-disabled .cmp-combobox-inner {
+    background-color: #EEE;
+    cursor: auto
+}
+
+.cmp-combobox-disabled .cmp-combobox-text {
+    color: #CCC
+}
+
+.cmp-combobox-inner {
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    padding: 0;
+    text-align: left;
+    cursor: pointer;
+    border: 1px solid #DDD;
+    outline: 0;
+    background: #fafafa
+}
+
+.cmp-combobox-text {
+    text-indent: 10px;
+    height: 28px;
+    font: 13px/25px microsoft yahei;
+    color: #313131;
+    margin-right: 20px;
+    border-right:1px solid #DDD;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.cmp-combobox-toggle {
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    margin-top: -2px;
+    border-top: 5px solid #A7A7A7;
+    border-left: 5px dashed transparent;
+    border-right: 5px dashed transparent;
+    border-bottom: 0 none;
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    line-height: 0;
+    font-size: 0
+}
+
+.cmp-combobox-open .cmp-combobox-toggle {
+    margin-top: -3px;
+    border-top: 0 none;
+    border-bottom: 5px solid #A7A7A7
+}
+
+.cmp-combobox-items {
+    width: 100%;
+    max-height: 300px;
+    overflow: auto;
+    position: absolute;
+    left: 0;
+    top: 29px;
+    background: #FFF;
+    border: 1px solid #DCDCDC;
+    z-index: 9;
+}
+
+.cmp-combobox-items li {
+    list-style: none;
+    height: 30px;
+    padding: 0 10px;
+    font: 12px/30px microsoft yahei;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-top: 1px solid #EEE
+}
+.cmp-combobox-items li:first-child {
+	border-top : none;
+}
+
+.cmp-combobox-items li.cmp-combobox-selected,.cmp-combobox-items li.cmp-combobox-selected:hover {
+    background-color: #D9E8FB;
+    color: #313131
+}
+
+.cmp-combobox-items li:hover {
+    background-color: #EEE
+}
+
+
+
+
+
+/* -- input[type=text] --*/
+
+.cmp-input-text {
+    display: inline-block;
+}
+.cmp-input {
+	width: 350px;
+    height: 26px;
+    border: 1px solid #e7e7e7;
+    line-height: 26px;
+    text-indent: 3px;
+    outline: none;
+    margin-right: 5px;
+}
+.cmp-input-tips {
+	display: inline-block;
+	line-height: 20px;
+	vertical-align: middle;
+	padding: 2px 4px;
+	border: 1px solid #f04134;
+	border-radius: 2px;
+	color: #f04134;
+}
+.cmp-input-error {
+	border: 1px solid #f04134;
+}
+.cmp-tips-block {
+	display: inline-block;
+}
+

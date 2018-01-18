@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>SPA(knockout+require+director)</title>
+	<link rel="stylesheet" href="../resources/css/components.css">
+	<script>var CONTEXTPATH = '';</script>
+</head>
+<body>
+
+	<h1>SPA(knockout+require+director)</h1>
+	<div data-bind="component: { name: route().page, params: route }"></div>
+			
+
+    <script src="../resources/js/config.js"></script>
+    <script data-main="../resources/js/apps/startup" src="../resources/js/libs/require-2.1.11.min.js"></script>
+</body>
+</html>
